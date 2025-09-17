@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Stitch Design</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#f27f0d",
+              "background-light": "#f8f7f5",
+              "background-dark": "#221910",
+            },
+            fontFamily: {
+              display: ["Plus Jakarta Sans"],
+            },
+            borderRadius: {
+              DEFAULT: "0.5rem",
+              lg: "1rem",
+              xl: "1.5rem",
+              full: "9999px",
+            },
+          },
+        },
+      };
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 24;
+      }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-stone-900 dark:text-stone-100">
+<div class="flex h-auto min-h-screen w-full flex-col justify-between">
+<div class="flex-grow">
+<header class="sticky top-0 z-10 flex items-center justify-between bg-background-light/80 p-4 pb-2 backdrop-blur-sm dark:bg-background-dark/80">
+<button class="flex h-10 w-10 items-center justify-center rounded-full text-stone-900 dark:text-stone-100">
+<span class="material-symbols-outlined"> arrow_back </span>
+</button>
+<h2 class="flex-1 text-center text-lg font-bold">Product Details</h2>
+<div class="w-10"></div>
+</header>
+<main>
+<div class="w-full">
+<div class="mx-auto aspect-square w-full max-w-sm bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBX6bMj31h_YtDYI2-3fPA3n54Xh_-yc-K3zrBH_LQKpUV_8Alv4-k3sUqUrfuBEzPRL1ZCjSMHor7EAeZfqHMJFkIUyV3WZjTNBedv7qYYZS5iHWLBrW6TmNKhyPCmZXYcVyQ-1BuOI-E7NkDTW9L0x-aun5RvFwIHQtZIBLa10egmu-Q9dPqwWweidi_ypJtZ5JgJ-ipqNakQImVgLSTepZXlWnW3kHvRcX_GrxRfZmbc1xgkKhkW9HqXi6l1inbGVONEV57p");'></div>
+</div>
+<div class="p-4">
+<h1 class="text-3xl font-bold text-stone-900 dark:text-white">Mango Tango</h1>
+<p class="mt-2 text-stone-600 dark:text-stone-400">A tropical blend of ripe mangoes, passion fruit, and a hint of ginger.</p>
+</div>
+<div class="space-y-4 p-4">
+<div>
+<h3 class="text-lg font-bold text-stone-900 dark:text-white">Ingredients</h3>
+<p class="mt-1 text-stone-600 dark:text-stone-400">Mango, Passion Fruit, Ginger, Water</p>
+</div>
+<div>
+<h3 class="text-lg font-bold text-stone-900 dark:text-white">Nutritional Information</h3>
+<div class="mt-2 space-y-3 border-t border-stone-200 pt-3 dark:border-stone-800">
+<div class="flex justify-between text-sm">
+<p class="text-stone-500 dark:text-stone-400">Calories</p>
+<p class="font-medium text-stone-900 dark:text-white">120</p>
+</div>
+<div class="flex justify-between border-t border-stone-200 pt-3 dark:border-stone-800 text-sm">
+<p class="text-stone-500 dark:text-stone-400">Sugar</p>
+<p class="font-medium text-stone-900 dark:text-white">25g</p>
+</div>
+<div class="flex justify-between border-t border-stone-200 pt-3 dark:border-stone-800 text-sm">
+<p class="text-stone-500 dark:text-stone-400">Fat</p>
+<p class="font-medium text-stone-900 dark:text-white">0g</p>
+</div>
+<div class="flex justify-between border-t border-stone-200 pt-3 dark:border-stone-800 text-sm">
+<p class="text-stone-500 dark:text-stone-400">Protein</p>
+<p class="font-medium text-stone-900 dark:text-white">1g</p>
+</div>
+</div>
+</div>
+<div>
+<h3 class="text-lg font-bold text-stone-900 dark:text-white">Size</h3>
+<div class="mt-2 flex gap-3">
+<label class="flex flex-1 cursor-pointer items-center justify-center rounded-lg border-2 border-stone-200 bg-stone-100 p-3 text-sm font-medium text-stone-800 has-[:checked]:border-primary has-[:checked]:bg-primary/10 has-[:checked]:text-primary dark:border-stone-700 dark:bg-stone-800 dark:text-stone-200 dark:has-[:checked]:border-primary dark:has-[:checked]:bg-primary/20">
+<input checked="" class="sr-only" name="size" type="radio" value="300ml"/>
+                  300ml
+                </label>
+<label class="flex flex-1 cursor-pointer items-center justify-center rounded-lg border-2 border-stone-200 bg-stone-100 p-3 text-sm font-medium text-stone-800 has-[:checked]:border-primary has-[:checked]:bg-primary/10 has-[:checked]:text-primary dark:border-stone-700 dark:bg-stone-800 dark:text-stone-200 dark:has-[:checked]:border-primary dark:has-[:checked]:bg-primary/20">
+<input class="sr-only" name="size" type="radio" value="500ml"/>
+                  500ml
+                </label>
+<label class="flex flex-1 cursor-pointer items-center justify-center rounded-lg border-2 border-stone-200 bg-stone-100 p-3 text-sm font-medium text-stone-800 has-[:checked]:border-primary has-[:checked]:bg-primary/10 has-[:checked]:text-primary dark:border-stone-700 dark:bg-stone-800 dark:text-stone-200 dark:has-[:checked]:border-primary dark:has-[:checked]:bg-primary/20">
+<input class="sr-only" name="size" type="radio" value="1l"/>
+                  1L
+                </label>
+</div>
+</div>
+<div class="flex items-baseline justify-between">
+<p class="text-stone-500 dark:text-stone-400">Price</p>
+<p class="text-2xl font-bold text-stone-900 dark:text-white">UGX 15,000</p>
+</div>
+</div>
+</main>
+</div>
+<footer class="sticky bottom-0 bg-background-light dark:bg-background-dark">
+<div class="p-4">
+<button class="h-14 w-full transform rounded-xl bg-primary text-white text-lg font-bold shadow-lg shadow-primary/30 transition-transform active:scale-95">Add to Cart</button>
+</div>
+<div class="flex justify-around border-t border-stone-200 bg-background-light px-4 pb-3 pt-2 dark:border-stone-800 dark:bg-background-dark">
+<a class="flex flex-col items-center gap-1 text-primary" href="#">
+<span class="material-symbols-outlined"> home </span>
+<span class="text-xs font-medium">Home</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-stone-500 dark:text-stone-400" href="#">
+<span class="material-symbols-outlined"> grid_view </span>
+<span class="text-xs font-medium">Categories</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-stone-500 dark:text-stone-400" href="#">
+<span class="material-symbols-outlined"> receipt_long </span>
+<span class="text-xs font-medium">Orders</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-stone-500 dark:text-stone-400" href="#">
+<span class="material-symbols-outlined"> person </span>
+<span class="text-xs font-medium">Profile</span>
+</a>
+</div>
+</footer>
+</div>
+
+</body></html>
