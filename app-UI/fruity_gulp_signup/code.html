@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Fruity Gulp Juice - Sign Up</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#f27f0d",
+                        "background-light": "#f8f7f5",
+                        "background-dark": "#221910",
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .form-input {
+            position: relative;
+        }
+        .form-input input {
+            background-color: transparent;
+            border: 1px solid;
+            transition: all 0.2s ease-in-out;
+        }
+        .form-input label {
+            position: absolute;
+            left: 1rem;
+            top: 50%;
+            transform: translateY(-50%);
+            transition: all 0.2s ease-in-out;
+            pointer-events: none;
+        }
+        .form-input input:focus+label,
+        .form-input input:not(:placeholder-shown)+label {
+            top: 0.75rem;
+            transform: translateY(0);
+            font-size: 0.75rem;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="flex flex-col min-h-screen">
+<header class="flex items-center justify-between p-4">
+<button class="text-background-dark/80 dark:text-background-light/80">
+<span class="material-symbols-outlined text-3xl">close</span>
+</button>
+<h1 class="text-xl font-bold text-background-dark dark:text-background-light flex-1 text-center pr-10">Sign Up</h1>
+</header>
+<main class="flex-grow flex flex-col justify-center px-6">
+<div class="space-y-6">
+<div class="form-input text-background-dark/60 dark:text-background-light/60">
+<input class="w-full h-16 px-4 pb-2 pt-6 rounded-xl border-background-dark/20 dark:border-background-light/20 focus:border-primary focus:ring-0" id="name" placeholder=" " type="text"/>
+<label class="text-base" for="name">Name</label>
+</div>
+<div class="form-input text-background-dark/60 dark:text-background-light/60">
+<input class="w-full h-16 px-4 pb-2 pt-6 rounded-xl border-background-dark/20 dark:border-background-light/20 focus:border-primary focus:ring-0" id="email" placeholder=" " type="email"/>
+<label class="text-base" for="email">Phone or Email</label>
+</div>
+<div class="form-input text-background-dark/60 dark:text-background-light/60">
+<input class="w-full h-16 px-4 pb-2 pt-6 rounded-xl border-background-dark/20 dark:border-background-light/20 focus:border-primary focus:ring-0" id="password" placeholder=" " type="password"/>
+<label class="text-base" for="password">Password</label>
+</div>
+</div>
+<button class="w-full bg-primary text-white font-bold py-4 mt-8 rounded-xl shadow-lg shadow-primary/20 hover:bg-primary/90 transition-all duration-300 transform hover:scale-105">
+                Sign Up
+            </button>
+<div class="flex items-center my-8">
+<hr class="flex-grow border-background-dark/10 dark:border-background-light/10"/>
+<span class="mx-4 text-sm text-background-dark/60 dark:text-background-light/60">Or sign up with</span>
+<hr class="flex-grow border-background-dark/10 dark:border-background-light/10"/>
+</div>
+<div class="flex space-x-4">
+<button class="flex-1 flex items-center justify-center gap-2 py-3 rounded-xl bg-primary/10 dark:bg-primary/20 text-background-dark dark:text-background-light font-semibold hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors">
+<svg class="w-6 h-6" viewBox="0 0 48 48"><path d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z" fill="#EA4335"></path><path d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6.02C43.43 37.02 47 31.17 47 24.55z" fill="#4285F4"></path><path d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24s.92 7.54 2.56 10.78l7.97-6.19z" fill="#FBBC05"></path><path d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6.02c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z" fill="#34A853"></path><path d="M0 0h48v48H0z" fill="none"></path></svg>
+                    Google
+                </button>
+<button class="flex-1 flex items-center justify-center gap-2 py-3 rounded-xl bg-primary/10 dark:bg-primary/20 text-background-dark dark:text-background-light font-semibold hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors">
+<svg class="w-6 h-6" viewBox="0 0 24 24"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-1.5c-1.11 0-1.5.49-1.5 1.18V12h3l-.5 3h-2.5v6.8c4.56-0.93 8-4.96 8-9.8z" fill="#1877F2"></path></svg>
+                    Facebook
+                </button>
+</div>
+</main>
+<footer class="text-center p-6">
+<p class="text-sm text-background-dark/60 dark:text-background-light/60">
+                Already have an account? <a class="font-semibold text-primary" href="#">Sign In</a>
+</p>
+</footer>
+</div>
+
+</body></html>
